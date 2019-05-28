@@ -1,0 +1,56 @@
+
+@font-face {
+  font-family: 'peanuts'; /*we can rename fonts as long as
+ it pointing to the right file*/
+  src:  url('Goonies.woff2') format('woff2'),
+        url('Goonies.woff') format('woff');
+}
+
+.hidden {display: none;}
+
+main
+{
+	width: 1024px; margin: 0 auto;
+}
+
+header
+{
+	background-image: url(../images/goonies.jpg);
+	background-repeat: no-repeat;
+	height: 330px;
+}
+
+body
+{
+	font-size: 16px;
+	padding: 2em;
+	/*an em is based on body font size
+	in this case: 1em = 16px;*/
+}
+
+.text-graphic
+{
+	font-size: 7.5em;
+	font-family: "peanuts", san-serif;
+	/*gradient*/
+	/*10%: chiem bao nhieu cai text*/ 
+	/*to bottom/to top: direction of color*/
+	background: linear-gradient(to bottom, #f27322 10%, #f9e639 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	left: 28px;
+	top: 150px;
+	position: relative;
+}
+
+.text-graphic span {
+	font-size: 3rem; /*relatively to the root font size*/
+	position: absolute;
+	top: -44px;
+	left: 30px;
+	background: linear-gradient(to bottom, #f27322 10%, #f9e639 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
